@@ -1,0 +1,43 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.main-image {
+  max-height: 50vh;
+  margin-bottom: 2em;
+}
+
+.main-text {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.main-box {
+  margin-bottom: 3em;
+}
+
+/* Light mode styles (default) */
+body.light-mode {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Default to system preference */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #333333;
+      color: #ffffff;
+  }
+}
