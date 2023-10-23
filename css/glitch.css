@@ -2,6 +2,10 @@
   display: none;
 }
 
+.body {
+  background: #000 !important;
+}
+
 .matrix {
   visibility: hidden;
   opacity: 0;
