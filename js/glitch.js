@@ -1,20 +1,16 @@
-setTimeout(() => {
-  startMatrix();
-  startGlitch();
-}, 10000);
+startGlitch();
+startMatrix();
 
 function startGlitch() {
   let imgdiv = document.getElementById("glitchimg");
   if (!imgdiv.classList.contains("glitch")) {
-    setTimeout(() => {
-      document.getElementById("ired").classList.add("red");
-      document.getElementById("igreen").classList.add("green");
-      document.getElementById("iblue").classList.add("blue");
-      imgdiv.classList.toggle("glitch");
-      let txt = document.getElementById("glitchtxt");
-      txt.innerHTML = '<span aria-hidden="true">Go peel a potato</span>Go peel a potato<span aria-hidden="true">Go peel a potato</span>';
-      txt.classList.add("textglitch")
-    }, 3000);
+    document.getElementById("ired").classList.add("red");
+    document.getElementById("igreen").classList.add("green");
+    document.getElementById("iblue").classList.add("blue");
+    imgdiv.classList.toggle("glitch");
+    let txt = document.getElementById("glitchtxt");
+    txt.innerHTML = '<span aria-hidden="true">Go peel a potato</span>Go peel a potato<span aria-hidden="true">Go peel a potato</span>';
+    txt.classList.add("textglitch")
   }
 }
 
