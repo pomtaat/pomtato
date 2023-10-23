@@ -42,3 +42,11 @@ body.dark-mode {
       color: #ffffff;
   }
 }
+
+.background{
+  color: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
